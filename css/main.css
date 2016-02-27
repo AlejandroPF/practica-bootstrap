@@ -13,7 +13,9 @@ footer.footer {
     color: #aaa !important;
     font-size: 85%;
 }
-
+#page-about .thumbnail {
+    margin: 5px;
+}
 /*
  * Override Bootstrap
  */
