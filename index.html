@@ -7,34 +7,207 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap-blackorange-theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+            /*
+            Hack para centrar imagen en carousel
+            No funciona si está en un archivo a parte
+            */
+            .carousel-inner > .item > img {
+                margin: 0 auto !important;
+            }
+        </style>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">AC/DC</a>
+                </div>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Música</a></li>
+                        <li><a href="#"></a></li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href='https://www.facebook.com/acdc' title='ACDC Facebook'><span class='fa fa-facebook-square'></span></a></li>
+                        <li><a href='https://twitter.com/acdc' title='ACDC Twitter'><span class='fa fa-twitter'></span></a></li>
+                        <li><a href='https://www.instagram.com/acdc' title='ACDC Instagram'><span class='fa fa-instagram'></span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active center">
+                    <img src="img/banner_band.jpg" alt="Logo ACDC"/>
+                    <div class="carousel-caption">
+                        ACDC
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/banner_music.jpg" alt="Grupo ACDC">
+                    <div class="carousel-caption">
+                        ACDC
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/banner_tour.jpg" alt="Angus Young a la guitarra">
+                    <div class="carousel-caption">
+                        ACDC
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <div class="container">
+            <section id='about'>
+                <div class="page-header">
+                    <h1 class='text-primary'>Quienes somos</h1>
+                </div>
+                <div class='section-content'>
+                    <p><span class="quotes"></span>AC/DC es un grupo de hard rock, formado en Sídney, Australia, en 1973, por los hermanos de origen escocés, 
+                        <a href='band.html'>Malcolm</a> y <a href='band.html'>Angus Young</a></p>
+                    <p>Sus álbumes se han vendido en numerosos países, en un total estimado de <strong>200 millones de copias</strong>,embarcándose en giras multitudinarias por todo el mundo, 
+                        y sus éxitos han musicalizado varias producciones cinematográficas sobresalientes.
+                        Son famosas sus actuaciones en vivo, resultando vibrantes y exultantes espectáculos de primer orden.
+                        Mucho de ello se debe al extravagante estilo de su guitarrista principal y símbolo visual, Angus Young, 
+                        quien asume el rol de agitador musical durante los conciertos, gracias a sus dinámicos y adrenalínicos despliegues escénicos uniformado de colegial callejero.
+                        Al comienzo, los circuitos de pubs australianos fueron testigo de los primeros meses de vida del proyecto, tiempos por los cuales sufrieron diversos cambios 
+                        en su alineación. En 1974, la llegada del cantante Bon Scott, se convertiría en pieza clave del éxito del grupo. Su presencia en escena, junto a los hermanos
+                        Young, lo convirtió en uno de los personajes más carismáticos de la historia del rock. La formación se estabilizaría con Mark Evans (bajo) y Phil Rudd (batería).</p>
+                    <p><a href='#' class='btn btn-primary'>Leer más</a></p>
+                </div>
+            </section>
+            <section id='music'>
+                <div class="page-header">
+                    <h1 class='text-primary'>Nuestro trabajo</h1>
+                </div>
+                <div class='section-content'>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src='img/covers/rockorbust.jpg'/>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src='img/covers/liveatriverplate.jpg'/>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src='img/covers/blackice_0.jpg'/>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src='img/covers/ballbreaker.jpg'/>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <p><a href='#' class='btn btn-primary'>Leer Más</a></p>
+                </div>
+            </section>
+            <section id='events'>
+                <div class="page-header">
+                    <h1 class='text-primary'>Próximos Eventos</h1>
+                </div>
+                <div class='section-content'>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class='row'>
+                                <div class='col-md-3'>
+                                    <strong>28 FEB</strong>
+                                </div>
+                                <div class='col-md-9'>
+                                    Kansas City, MO
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class='row'>
+                                <div class='col-md-3'>
+                                    <strong>8 MAR</strong>
+                                </div>
+                                <div class='col-md-9'>
+
+                                    Atlanta, GA
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class='row'>
+                                <div class='col-md-3'>
+                                    <strong>11 MAR</strong>
+                                </div>
+                                <div class='col-md-9'>
+                                    Ft. Lauderdale, FL
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><a href='#' class='btn btn-primary'>Leer Más</a></p>
+                </div>
+            </section>
+        </div>
+        <footer class='footer'>
+            <ul>
+                <li>Copyright &copy; 2016 Leidseplein Presse B.V. All Rights Reserved</li>
+                <li>Source: <a href='http://www.acdc.com'>AC/DC</a></li>
+                <li>Developed: Alejandro Peña Florentín <small class='text-primary'>alejandropenaflorentin@gmail.com</small></li>
+            </ul>
+        </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            (function (d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = '//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
         </script>
     </body>
 </html>
