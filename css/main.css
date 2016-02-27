@@ -10,17 +10,10 @@ footer.footer {
     padding: 1em 0 0.5em 0;
     border-top: solid 1px #333;
     margin: 3em 0 0 0 !important;
-}
-footer.footer ul {
-    list-style: none;
-    text-align: center;
-}
-footer.footer li {
-    display: inline;
-    margin: 0 1em !important;
-    font-size: 95%;
     color: #aaa !important;
+    font-size: 85%;
 }
+
 /*
  * Override Bootstrap
  */
