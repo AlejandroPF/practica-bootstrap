@@ -2,6 +2,13 @@
     font-family: "Neutron";
     src: url(../fonts/Neuton-Regular.ttf) format('truetype');
 }
+@font-face {
+    font-family: "Squealer";
+    src: url(../fonts/squealer/squealer.ttf) format('truetype');
+}
+.squealer {
+    font-family: "Squealer" !important;
+}
 #music .section-content img {
     border: solid 1px #ccc;
 }
@@ -13,9 +20,21 @@ footer.footer {
     color: #aaa !important;
     font-size: 85%;
 }
+.img-full {
+    width: 100% !important;
+}
 #page-about .thumbnail {
     margin: 5px;
 }
+#page-music #music-albums {
+    font-family: "Squealer";
+}
+#page-music #music-albums .thumbnail .caption{
+    text-align: center;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
 /*
  * Override Bootstrap
  */
