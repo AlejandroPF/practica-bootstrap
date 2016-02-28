@@ -12,7 +12,9 @@
         <link rel="icon" sizes="32x32" href="img/favicon_32.png">
         <link rel="apple-touch-icon-precomposed" href="img/favicon_152.png">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-blackorange-theme.css">
+
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -57,7 +59,9 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <img src='img/banner_music.jpg' alt='Música ACDC'/>
+
+        <img src='img/banner_music.jpg' alt='Música ACDC' class='img-full'/>    
+
         <div class="container">
             <section id='page-music'>
                 <div class='page-header'>
@@ -133,7 +137,7 @@
                             </a>
                         </div>
                     </div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col-xs-6 col-md-3  col-md-offset-3">
                             <a href="http://www.acdc.com/music" target="_blank" class="thumbnail">
                                 <img src='img/covers/letthereberock.jpg' alt="Black Ice Album"/>
@@ -150,9 +154,29 @@
                                 </div>
                             </a>
                         </div>
-                       
                     </div>
                 </section>
+                <section id='music-video'>
+                    <div class='page-header'>
+                        <h1 class='text-primary'>Video</h1>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-6'>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v2AC41dglnM" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class='col-md-6'>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/gEPmA3USJdI" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- 16:9 aspect ratio -->
+
+
             </section>
         </div>
         <footer class='footer'>
@@ -164,7 +188,7 @@
                     Source: <a href='http://www.acdc.com'>AC/DC</a>
                 </div>
                 <div class='col-md-5'>
-                    Developed: Alejandro Peña Florentín <small class='text-primary'>alejandropenaflorentin@gmail.com</small>
+                    Alejandro Peña Florentín <small class='text-primary'>alejandropenaflorentin@gmail.com</small>
                 </div>
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
