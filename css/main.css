@@ -34,7 +34,24 @@ footer.footer {
     font-size: 150%;
     text-transform: uppercase;
 }
-
+#page-events .section-content .event-date {
+    font-family: "Squealer";
+}
+#page-events .section-content .event-place,
+#page-events .section-content .event-location{
+    text-transform: uppercase;
+    color: #B68550;
+    font-family: "Neutron";
+    font-weight: bold;
+}
+#page-events .section-content .row{
+    font-size: 200%;
+    border-bottom: solid 1px #333;
+    padding: 0.5em 0;
+}
+#page-events .section-content .row:first-child{
+    border-top: solid 1px #333;
+}
 /*
  * Override Bootstrap
  */
